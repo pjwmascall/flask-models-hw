@@ -1,0 +1,52 @@
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+body {
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    animation: fadein 1s;
+}
+
+header {
+        z-index: -1;
+        height: 20em;
+        width: 20em;
+        border-radius: 50%;
+        position: absolute;
+        background-image: linear-gradient(#e640b4, #963188);
+        transform: translate(-50%, -50%)
+}
+
+h1 {
+    color: white;
+}
+
+ul {
+    display: flex;
+    gap: 5px;
+}
+
+li {
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 3%;
+    height: fit-content;
+    width: fit-content;
+    list-style: none;
+    background-color: rgba(146, 113, 223, 0.95);
+}
+
+li:hover {
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    text-align: center;
+}

@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}">
+        <title>Order List</title>
+    </head>
+    <body>
+        <header></header>
+        <h1>Orders</h1>
+        <ul>
+            {% for order in orders %}
+                <a href="/orders/{{ loop.index0 }}">
+                    <li>
+                        <p>
+                            <b>Order {{ loop.index0 + 1 }}</b><br>
+                            <b>Title:</b> {{ order.book_title }}<br>
+                            <b>Quantity:</b> {{ order.quantity }}<br>
+                        </p>
+                    </li>
+                </a><br>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
